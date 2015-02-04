@@ -6684,3 +6684,129 @@ Processing by CartsController#index as HTML
   [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts"[0m
   Rendered carts/index.html.erb within layouts/application (10.5ms)
 Completed 200 OK in 133ms (Views: 131.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-04 06:58:48 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant PagesController):
+  activesupport (4.1.8) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.8) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.8) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.8) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.8) lib/active_support/inflector/methods.rb:236:in `constantize'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:78:in `controller_reference'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:68:in `controller'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:46:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/share/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/share/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/share/rvm/rubies/ruby-2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/dwolfx/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered /home/dwolfx/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.3ms)
+  Rendered /home/dwolfx/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.0ms)
+  Rendered /home/dwolfx/.rvm/gems/ruby-2.1.5/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-04 07:06:14 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 284ms (Views: 264.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/cart_items.js%20.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/carts.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-04 07:06:15 -0800
+
+
+Started GET "/carts" for 127.0.0.1 at 2015-02-04 07:06:17 -0800
+Processing by CartsController#index as HTML
+  [1m[35mCart Load (7.6ms)[0m  SELECT "carts".* FROM "carts"
+  Rendered carts/index.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 223ms (Views: 200.1ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-04 07:06:19 -0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 198ms (Views: 196.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2015-02-04 07:06:20 -0800
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered items/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 139ms (Views: 131.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-04 07:06:22 -0800
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 142ms (Views: 140.5ms | ActiveRecord: 0.0ms)
