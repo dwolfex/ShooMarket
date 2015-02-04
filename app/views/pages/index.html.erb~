@@ -1,5 +1,5 @@
-<h1>Welcome#index</h1>
+<h1>Generic market</h1>
 
-<a href= "/items" >items</a>
+<a href= "/items" >item listing and posting</a>
 
 <a href= "/carts" >new cart</a>
