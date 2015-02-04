@@ -1,0 +1,22 @@
+<%= simple_nested_form_for(@cart) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :user_id %>
+   <%= f.input :status, collection: ["pending", "paid"]%>
+  </div>
+
+  <div id="cart_items">
+    <%= f.fields_for :cart_items do |ff| %>
+      <%= ff.association :item %>
+   
+      <%= ff.input :quantity %>
+      <%= ff.link_to_remove "Remove" %>
+    <% end %>
+  </div>
+  <%= f.link_to_add "Add cart Item", :cart_items %>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
